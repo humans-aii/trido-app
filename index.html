@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriDo - 3 Daily Tasks</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: #FAF8F5;
+            color: #2C2416;
+            line-height: 1.7;
+        }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 24px;
+        }
+        .logo {
+            font-size: 48px;
+            font-weight: 400;
+            letter-spacing: -1px;
+            margin-bottom: 8px;
+        }
+        .logo span { color: #D4804A; }
+        .tagline {
+            font-size: 20px;
+            color: #8B7E6A;
+            margin-bottom: 48px;
+        }
+        .hero-title {
+            font-size: clamp(32px, 5vw, 52px);
+            font-weight: 400;
+            line-height: 1.3;
+            max-width: 600px;
+            margin-bottom: 24px;
+        }
+        .hero-sub {
+            font-size: 18px;
+            color: #8B7E6A;
+            max-width: 480px;
+            margin-bottom: 48px;
+        }
+        .badge {
+            display: inline-block;
+            background: #2C2416;
+            color: #FAF8F5;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .badge:hover { opacity: 0.85; }
+        .features {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+        .features h2 {
+            font-size: 28px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+        .feature {
+            background: #fff;
+            border-radius: 14px;
+            padding: 28px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .feature h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #D4804A;
+            font-weight: 600;
+        }
+        .feature p {
+            font-size: 15px;
+            color: #8B7E6A;
+        }
+        .science {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+            text-align: center;
+        }
+        .science h2 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        .science p {
+            font-size: 16px;
+            color: #8B7E6A;
+            margin-bottom: 16px;
+        }
+        .quote {
+            font-style: italic;
+            font-size: 18px;
+            color: #2C2416;
+            border-left: 3px solid #D4804A;
+            padding-left: 20px;
+            text-align: left;
+            margin: 32px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            border-top: 1px solid #E8E0D6;
+            color: #8B7E6A;
+            font-size: 14px;
+        }
+        footer a { color: #D4804A; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="logo">Tri<span>Do</span></div>
+        <p class="tagline">3 tasks. Every day.</p>
+        <h1 class="hero-title">Your brain holds 3 things at once. Use that.</h1>
+        <p class="hero-sub">
+            Stop drowning in endless to-do lists. TriDo limits you to exactly 3 tasks per day.
+            Pick what matters. Finish it. Build your streak.
+        </p>
+        <a href="https://apps.apple.com/app/trido-3-daily-tasks/id000000000" class="badge">
+            Download on the App Store
+        </a>
+    </section>
+
+    <section class="features">
+        <h2>Less is more. Way more.</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>3 Slots, Zero Clutter</h3>
+                <p>No folders, tags, or priorities. Just 3 empty slots waiting for what matters most today.</p>
+            </div>
+            <div class="feature">
+                <h3>Swipe to Complete</h3>
+                <p>Swipe right or tap the checkbox. Feel the satisfying haptic feedback. Watch the checkmark appear.</p>
+            </div>
+            <div class="feature">
+                <h3>Build Your Streak</h3>
+                <p>Finish all 3 tasks to grow your streak. Hit milestones at 7, 30, 100, and 365 days.</p>
+            </div>
+            <div class="feature">
+                <h3>Share Your Wins</h3>
+                <p>Auto-generated share cards with your completed tasks and a motivational quote. Perfect for stories.</p>
+            </div>
+            <div class="feature">
+                <h3>Heat Map Calendar</h3>
+                <p>See 12 months of your consistency at a glance. Green for complete, orange for partial.</p>
+            </div>
+            <div class="feature">
+                <h3>Morning Nudge</h3>
+                <p>A gentle daily reminder with streak-aware messages. "Your streak is at 14 days — keep going!"</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="science">
+        <h2>Backed by science</h2>
+        <p>
+            Nelson Cowan's research shows working memory holds 3 to 4 items.
+            The Zeigarnik Effect proves unfinished tasks create anxiety.
+            Long to-do lists don't drive productivity — they drain it.
+        </p>
+        <div class="quote">
+            "The difference between successful people and very successful people
+            is that very successful people say no to almost everything."
+            <br>— Warren Buffett
+        </div>
+        <p>
+            Buffett, Ferriss, James Clear, and Brian Tracy all agree:
+            radical focus on the vital few beats endless task management.
+        </p>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2026 TriDo &nbsp;|&nbsp;
+            <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+            <a href="support.html">Support</a>
+        </p>
+    </footer>
+</body>
+</html>
